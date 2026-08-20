@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Espacio pedagógico de español para alumnado francés de Bac Professionnel.">
+  <title>Espacio Español · Bac Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enriched.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido <small>Aller au contenu</small></a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Espacio Español, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">¡!</span>
+      <span>ESPACIO <strong>ESPAÑOL</strong></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">☰ <span>Menú</span></button>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="#niveles">Niveles <small>Niveaux</small></a>
+      <a href="#guia">Cómo usar <small>Mode d’emploi</small></a>
+      <a href="#herramientas">Herramientas <small>Outils</small></a>
+      <a href="#bac">Bac <small>Examen</small></a>
+      <button id="progress-button" class="progress-pill" type="button">0% <span>Mi progreso</span></button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">ESPAÑOL · BAC PROFESSIONNEL</p>
+        <h1>Aprende. Practica.<br><em>Atrévete.</em></h1>
+        <p class="lead">Tu espacio para comprender mejor, repasar a tu ritmo y ganar confianza en español.</p>
+        <p class="translation">Ton espace pour mieux comprendre, réviser à ton rythme et prendre confiance en espagnol.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#niveles">Elegir mi nivel <small>Choisir mon niveau</small> <span aria-hidden="true">→</span></a>
+          <button class="button secondary" id="continue-button" type="button">Continuar <small>Continuer</small></button>
+        </div>
+        <ul class="trust-list" aria-label="Ventajas de la plataforma">
+          <li>✓ A tu ritmo <small>À ton rythme</small></li>
+          <li>✓ En móvil y ordenador <small>Mobile et ordinateur</small></li>
+          <li>✓ Progreso guardado <small>Progression sauvegardée</small></li>
+        </ul>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Composición ilustrada de estudiantes diversos aprendiendo español">
+        <div class="sun"></div><div class="shape shape-a"></div><div class="shape shape-b"></div>
+        <div class="speech-card"><span>¡Hola!</span><small>Prêt·e ?</small></div>
+        <div class="student-card student-one"><span aria-hidden="true">👩🏽‍🎓</span><b>Escucho</b><small>J'écoute</small></div>
+        <div class="student-card student-two"><span aria-hidden="true">🧑🏻‍💻</span><b>Practico</b><small>Je pratique</small></div>
+      </div>
+    </section>
+
+    <section id="niveles" class="levels section-shell">
+      <div class="section-heading">
+        <div><p class="eyebrow">TU RECORRIDO</p><h2>¿En qué curso estás?</h2><p class="translation">Dans quelle classe es-tu ?</p></div>
+        <p>Elige un nivel para descubrir sus unidades. Podrás volver aquí en cualquier momento.</p>
+      </div>
+      <div id="level-cards" class="level-grid"></div>
+    </section>
+
+    <section id="catalog" class="catalog section-shell" hidden>
+      <button class="text-button" id="back-levels" type="button">← Todos los niveles <small>Tous les niveaux</small></button>
+      <div id="catalog-heading"></div>
+      <div id="unit-grid" class="unit-grid"></div>
+    </section>
+
+    <section id="unit-view" class="unit-view" hidden aria-live="polite"></section>
+
+    <section id="guia" class="student-guide section-shell">
+      <div class="section-heading"><div><p class="eyebrow">ANTES DE EMPEZAR</p><h2>¿Cómo utilizar este espacio?</h2><p class="translation">Comment utiliser cet espace ?</p></div><p>Trabaja poco a poco y vuelve a intentarlo. Equivocarse forma parte del aprendizaje.</p></div>
+      <div class="guide-grid">
+        <article><span>1</span><h3>Elige tu nivel</h3><small>Choisis ton niveau</small><p>Abre la unidad indicada por tu profesora.</p><p class="translation">Ouvre l’unité indiquée par ta professeure.</p></article>
+        <article><span>2</span><h3>Comprende y aprende</h3><small>Comprends et apprends</small><p>Lee, escucha y descubre el vocabulario antes de practicar.</p><p class="translation">Lis, écoute et découvre le vocabulaire avant de pratiquer.</p></article>
+        <article><span>3</span><h3>Practica varias veces</h3><small>Entraîne-toi plusieurs fois</small><p>Lee la explicación cuando una respuesta no sea correcta.</p><p class="translation">Lis l’explication lorsqu’une réponse est incorrecte.</p></article>
+        <article><span>4</span><h3>Realiza la misión</h3><small>Réalise la mission</small><p>Reutiliza el léxico y revisa los criterios antes de terminar.</p><p class="translation">Réutilise le lexique et vérifie les critères.</p></article>
+      </div>
+      <aside class="privacy-note"><b>Tu privacidad</b><small>Ta vie privée</small><p>Esta versión no pide nombre, correo ni cuenta. El progreso se guarda solamente en este navegador. No escribas datos personales en los ejercicios.</p><p class="translation">Cette version ne demande ni nom, ni adresse mail, ni compte. La progression reste dans ce navigateur. N’écris pas de données personnelles dans les exercices.</p></aside>
+    </section>
+
+    <section id="herramientas" class="tools section-shell">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">CAJA DE HERRAMIENTAS</p><h2>Un apoyo cuando lo necesites</h2><p class="translation">Un coup de pouce quand tu en as besoin</p></div>
+      </div>
+      <div class="tool-grid">
+        <button type="button" data-tool="vocab"><span aria-hidden="true">🗂️</span><h3>Vocabulario</h3><small>Vocabulaire</small><p>Palabras esenciales por tema.</p><b>Abrir →</b></button>
+        <button type="button" data-tool="grammar"><span aria-hidden="true">🧠</span><h3>Gramática</h3><small>Grammaire</small><p>Explicaciones breves y modelos.</p><b>Abrir →</b></button>
+        <button type="button" data-tool="pronunciation"><span aria-hidden="true">🔊</span><h3>Pronunciación</h3><small>Prononciation</small><p>Escucha, repite y compárate.</p><b>Abrir →</b></button>
+        <button type="button" data-tool="culture"><span aria-hidden="true">🌎</span><h3>Cultura</h3><small>Culture</small><p>Descubre el mundo hispanohablante.</p><b>Abrir →</b></button>
+      </div>
+    </section>
+
+    <section id="tool-view" class="tool-view section-shell" hidden aria-live="polite"></section>
+
+    <section id="bac" class="bac-banner section-shell">
+      <div><p class="eyebrow">TERMINALE</p><h2>Preparación del Bac, paso a paso</h2><p class="translation">Préparation au Bac, étape par étape</p><p>Métodos claros, entrenamientos cronometrados y criterios para saber cómo progresar.</p></div>
+      <div class="bac-steps" aria-label="Competencias para el Bac"><span>🎧 Comprender</span><span>💬 Hablar</span><span>📖 Leer</span><span>✍️ Escribir</span></div>
+      <a class="button light" href="#niveles">Ver el recorrido <small>Voir le parcours</small> →</a>
+    </section>
+  </main>
+
+  <dialog id="progress-dialog">
+    <button class="dialog-close" type="button" aria-label="Cerrar">×</button>
+    <p class="eyebrow">MI RECORRIDO</p><h2>Tu progreso</h2><p class="translation">Ta progression</p>
+    <div class="progress-track"><span id="progress-bar"></span></div>
+    <p id="progress-summary"></p>
+    <button id="reset-progress" class="text-button danger" type="button">Borrar mi progreso <small>Effacer ma progression</small></button>
+  </dialog>
+
+  <footer><div class="brand"><span class="brand-mark">¡!</span><span>ESPACIO <strong>ESPAÑOL</strong></span></div><p>Contenido pedagógico original · Inspirado en la progresión de clase</p></footer>
+  <script src="content.js"></script>
+  <script src="media-content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
